@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Çıktı Ekranı</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+        }
+
+        /* Sol ve sağ bölme */
+        .container {
+            display: flex;
+            flex: 1;
+            flex-direction: row;
+        }
+
+        /* Sol Panel */
+        .left-panel {
+            width: 15%;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            font-weight: bold;
+            border-right: 2px solid #ccc;
+        }
+
+        /* Orta Bölüm (Grafik Alanı) */
+        .graph-container {
+            flex: 1;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #graph {
+            width: 90%;
+            height: 90%;
+            border: 1px solid #ccc;
+        }
+
+        /* Sağ Panel */
+        .right-panel {
+            width: 20%;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            border-left: 2px solid #ccc;
+        }
+
+        /* Butonlar */
+        .button {
+            width: 80%;
+            padding: 15px;
+            margin: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Sol Panel -->
+        <div class="left-panel">ÇIKTI EKRANI</div>
+
+        <!-- Grafik Alanı -->
+        <div class="graph-container">
+            <div id="graph">
+                <!-- Buraya grafik yerleştirilecek -->
+                <p>Grafik buraya gelecek</p>
+            </div>
+        </div>
+
+        <!-- Sağ Panel -->
+        <div class="right-panel">
+            <button class="button" onclick="alert('1. İster Tıklandı!')">1. İSTER</button>
+            <button class="button" onclick="alert('2. İster Tıklandı!')">2. İSTER</button>
+            <button class="button" onclick="alert('3. İster Tıklandı!')">3. İSTER</button>
+            <button class="button" onclick="alert('4. İster Tıklandı!')">4. İSTER</button>
+            <button class="button" onclick="alert('5. İster Tıklandı!')">5. İSTER</button>
+            <button class="button" onclick="alert('6. İster Tıklandı!')">6. İSTER</button>
+            <button class="button" onclick="alert('7. İster Tıklandı!')">7. İSTER</button>
+        </div>
+    </div>
+</body>
+</html>
